@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <TextView
+        android:id="@+id/revestimento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="FOTO DO REVESTIMENTO ANTES:" />
+
+
+
+    <ImageView
+        android:id="@+id/imageViewFoto"
+        android:layout_width="210dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/revestimento"
+        android:layout_below="@+id/revestimento"
+        app:srcCompat="?android:attr/colorBackground" />
+
+
+
+    <ImageButton
+        android:id="@+id/imageButtonCamera"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@id/imageViewFoto"
+        android:layout_below="@id/revestimento"
+        android:background = "@drawable/round_button"
+        android:src="@drawable/ic_photo_camera_white_24dp"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/buttonFotos"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/revestimento"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/imageButtonCamera"
+        android:background="@drawable/fundo_bot"
+        android:text="FOTOS"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/horimetro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HORIMETRO:"
+        android:layout_below="@+id/imageViewFoto"
+        android:layout_marginTop="50dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/imageViewHorimetro"
+        android:layout_width="210dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/horimetro"
+        android:layout_below="@+id/horimetro"
+        app:srcCompat="?android:attr/colorBackground" />
+
+
+
+    <ImageButton
+        android:id="@+id/imageButtonCamHorimetro"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@id/imageViewHorimetro"
+        android:layout_below="@id/horimetro"
+        android:background = "@drawable/round_button"
+        android:src="@drawable/ic_photo_camera_white_24dp"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/buttonFotosHorimetro"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/horimetro"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/imageButtonCamHorimetro"
+        android:background="@drawable/fundo_bot"
+        android:text="FOTOS"
+        android:textColor="#FFFFFF" />
+
+
+
+
+
+    <TextView
+        android:id="@+id/tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TAG:"
+        android:layout_below="@+id/imageViewHorimetro"
+        android:layout_marginTop="50dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageviewTAG"
+        android:layout_width="210dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/tag"
+        android:layout_below="@+id/tag"
+        app:srcCompat="?android:attr/colorBackground" />
+
+
+
+    <ImageButton
+        android:id="@+id/imageButtonCamTAG"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@id/imageviewTAG"
+        android:layout_below="@id/tag"
+        android:background = "@drawable/round_button"
+        android:src="@drawable/ic_photo_camera_white_24dp"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/buttonFotosTAG"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/tag"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/imageButtonCamTAG"
+        android:background="@drawable/fundo_bot"
+        android:text="FOTOS"
+        android:textColor="#FFFFFF" />
+
+
+
+
+
+
+
+    <Button
+        android:id="@+id/btavancar"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/fundo_bot"
+        android:text="AVANÇAR"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="20dp"
+        />
+
+
+
+
+</RelativeLayout>
