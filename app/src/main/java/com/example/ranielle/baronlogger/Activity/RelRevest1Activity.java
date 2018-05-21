@@ -6,6 +6,7 @@ import android.Manifest;
 import android.content.ContentResolver;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -36,6 +37,8 @@ import android.widget.Toast;
 import com.example.ranielle.baronlogger.Helper.Permissao;
 import com.example.ranielle.baronlogger.R;
 
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 import java.io.InputStream;
 
 @SuppressWarnings("unused")
@@ -212,10 +215,27 @@ public class RelRevest1Activity extends AppCompatActivity {
 
                 if (imagem != null) {
                     imageviewFoto.setImageBitmap(imagem);
+                    // Converter a imagem no imageview em array de bytes
+
+                    Bitmap bitmap = ((BitmapDrawable)imageviewFoto.getDrawable()).getBitmap();
+                    ByteArrayOutputStream stream = new ByteArrayOutputStream();
+                    bitmap.compress(Bitmap.CompressFormat.JPEG, 100, stream);
+                    byte[] imageInByte = stream.toByteArray();
+
+
+                    try { stream.close(); }
+                    catch (IOException e) {
+                        e.printStackTrace();
+                    }
+
+
+
                 }
 
                 if (imghorimetro !=null){
                     imageviewHorimetro.setImageBitmap(imghorimetro);
+
+
                 }
                 if (imgTAG !=null){
                     imageviewTAG.setImageBitmap(imgTAG);
