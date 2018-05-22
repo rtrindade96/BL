@@ -37,7 +37,4 @@ dependencies {
     api 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
 
 
-
-
-
 }
