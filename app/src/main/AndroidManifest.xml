@@ -43,7 +43,9 @@
             android:name=".Activity.ActivityTeste"
             android:label="@string/title_activity_teste"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Activity.CadastroActivity"></activity>
+        <activity android:name=".Activity.CadastroActivity" />
+        <activity android:name=".Activity.RelInsp1Activity" />
+        <activity android:name=".Activity.RelInsp2Activity"></activity>
     </application>
 
 </manifest>

@@ -3,8 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:paddingLeft="16dp"
-    android:paddingRight="16dp">
+    android:paddingRight="16dp"
+    tools:context=".Activity.RelRevest1Activity">
 
     <TextView
         android:id="@+id/revestimento"
@@ -16,7 +18,7 @@
 
 
     <ImageView
-        android:id="@+id/imageViewFoto"
+        android:id="@+id/input_revestimento"
         android:layout_width="210dp"
         android:layout_height="50dp"
         android:layout_alignStart="@+id/revestimento"
@@ -26,37 +28,39 @@
 
 
     <ImageButton
-        android:id="@+id/imageButtonCamera"
+        android:id="@+id/btcamera"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_toRightOf="@id/imageViewFoto"
+        android:layout_toRightOf="@id/input_revestimento"
         android:layout_below="@id/revestimento"
         android:background = "@drawable/round_button"
         android:src="@drawable/ic_photo_camera_white_24dp"
         android:textColor="#FFFFFF"/>
 
     <Button
-        android:id="@+id/buttonFotos"
+        android:id="@+id/btfotos"
         android:layout_width="100dp"
         android:layout_height="50dp"
-        android:layout_alignParentEnd="true"
-        android:layout_below="@+id/tag"
+        android:layout_toRightOf="@id/btcamera"
+        android:layout_below="@id/revestimento"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/fundo_bot"
         android:text="FOTOS"
-        android:textColor="#FFFFFF" />
+        android:layout_marginLeft="10dp"
+        android:textColor="#FFFFFF"/>
 
     <TextView
         android:id="@+id/horimetro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="HORIMETRO:"
-        android:layout_below="@+id/imageViewFoto"
+        android:layout_below="@+id/input_revestimento"
         android:layout_marginTop="50dp"
         />
 
 
     <ImageView
-        android:id="@+id/imageViewHorimetro"
+        android:id="@+id/input_horimetro"
         android:layout_width="210dp"
         android:layout_height="50dp"
         android:layout_alignStart="@+id/horimetro"
@@ -66,26 +70,26 @@
 
 
     <ImageButton
-        android:id="@+id/imageButtonCamHorimetro"
+        android:id="@+id/btcamera1"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_toRightOf="@id/imageViewHorimetro"
+        android:layout_toRightOf="@id/input_horimetro"
         android:layout_below="@id/horimetro"
         android:background = "@drawable/round_button"
         android:src="@drawable/ic_photo_camera_white_24dp"
         android:textColor="#FFFFFF"/>
 
     <Button
-        android:id="@+id/buttonFotosHorimetro"
+        android:id="@+id/btfotos1"
         android:layout_width="100dp"
         android:layout_height="50dp"
+        android:layout_toRightOf="@id/btcamera1"
         android:layout_below="@id/horimetro"
         android:layout_marginBottom="16dp"
-        android:layout_marginLeft="10dp"
-        android:layout_toRightOf="@id/imageButtonCamHorimetro"
         android:background="@drawable/fundo_bot"
         android:text="FOTOS"
-        android:textColor="#FFFFFF" />
+        android:layout_marginLeft="10dp"
+        android:textColor="#FFFFFF"/>
 
 
 
@@ -96,12 +100,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TAG:"
-        android:layout_below="@+id/imageViewHorimetro"
+        android:layout_below="@+id/input_horimetro"
         android:layout_marginTop="50dp"
         />
 
     <ImageView
-        android:id="@+id/imageviewTAG"
+        android:id="@+id/input_tag"
         android:layout_width="210dp"
         android:layout_height="50dp"
         android:layout_alignStart="@+id/tag"
@@ -111,23 +115,25 @@
 
 
     <ImageButton
-        android:id="@+id/imageButtonCamTAG"
+        android:id="@+id/btcamera2"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_toRightOf="@id/imageviewTAG"
+        android:layout_toRightOf="@id/input_tag"
         android:layout_below="@id/tag"
         android:background = "@drawable/round_button"
         android:src="@drawable/ic_photo_camera_white_24dp"
         android:textColor="#FFFFFF"/>
 
     <Button
-        android:id="@+id/buttonFotosTAG"
+        android:id="@+id/btfotos2"
         android:layout_width="100dp"
         android:layout_height="50dp"
-        android:layout_alignParentEnd="true"
-        android:layout_below="@+id/revestimento"
+        android:layout_toRightOf="@id/btcamera2"
+        android:layout_below="@id/tag"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/fundo_bot"
         android:text="FOTOS"
+        android:layout_marginLeft="10dp"
         android:textColor="#FFFFFF" />
 
 
