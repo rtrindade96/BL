@@ -45,7 +45,8 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Activity.CadastroActivity" />
         <activity android:name=".Activity.RelInsp1Activity" />
-        <activity android:name=".Activity.RelInsp2Activity"></activity>
+        <activity android:name=".Activity.RelInsp2Activity" />
+        <activity android:name=".Activity.RelRevest3Activity"></activity>
     </application>
 
 </manifest>
