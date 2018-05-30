@@ -65,7 +65,7 @@
 
 
 <ImageButton
-    android:id="@+id/btcamera"
+    android:id="@+id/imageButtonCamera"
     android:layout_width="50dp"
     android:layout_height="50dp"
     android:layout_toRightOf="@id/input_revestimentodepois"
@@ -78,7 +78,7 @@
     android:id="@+id/btfotos"
     android:layout_width="100dp"
     android:layout_height="50dp"
-    android:layout_toRightOf="@id/btcamera"
+    android:layout_toRightOf="@id/imageButtonCamera"
     android:layout_below="@id/revestimentodepois"
     android:layout_marginBottom="16dp"
     android:background="@drawable/fundo_bot"
@@ -165,4 +165,4 @@
     />
 
 
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>
