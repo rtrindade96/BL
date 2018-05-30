@@ -38,6 +38,8 @@ public class CadastroActivity extends AppCompatActivity {
 
                 Intent intentVaipraMain = new Intent(CadastroActivity.this, MainActivity.class);
                 startActivity(intentVaipraMain);
+
+
             }
         });
 
