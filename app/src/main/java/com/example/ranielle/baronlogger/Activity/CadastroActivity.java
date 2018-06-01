@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Spinner;
 
 import com.example.ranielle.baronlogger.MainActivity;
@@ -17,8 +19,8 @@ public class CadastroActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastro);
-        Spinner dropdown = findViewById(R.id.spinnerFABRICANTE);
-        Spinner dropdown2 = findViewById(R.id.spinnerTIPOEQ);
+        final Spinner dropdownFABRICANTE = findViewById(R.id.spinnerFABRICANTE);
+        final Spinner dropdownTIPOEQ = findViewById(R.id.spinnerTIPOEQ);
         //create a list of items for the spinner.
         String[] itemsFABRICANTE = new String[]{"CATERPILLAR"};
         String[] itemsTIPOEQ = new String[]{"FORA DE ESTRADA"};
@@ -27,17 +29,28 @@ public class CadastroActivity extends AppCompatActivity {
         ArrayAdapter<String> adapterFAB = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, itemsFABRICANTE);
         ArrayAdapter<String> adapterTIPO = new ArrayAdapter<>(this,android.R.layout.simple_spinner_dropdown_item, itemsTIPOEQ);
         //set the spinners adapter to the previously created one.
-        dropdown.setAdapter(adapterFAB);
-        dropdown2.setAdapter(adapterTIPO);
+        dropdownFABRICANTE.setAdapter(adapterFAB);
+        dropdownTIPOEQ.setAdapter(adapterTIPO);
 
         Button avancar = findViewById(R.id.bntCONCLUIR);
         avancar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
+                String FABRICANTE = dropdownFABRICANTE.getSelectedItem().toString();
+                String TIPO_EQUIP = dropdownTIPOEQ.getSelectedItem().toString();
 
-                Intent intentVaipraMain = new Intent(CadastroActivity.this, MainActivity.class);
-                startActivity(intentVaipraMain);
+                EditText modelo = findViewById(R.id.editMODELO);
+                String MODELO = modelo.getText().toString();
+
+                EditText area = findViewById(R.id.editAREA);
+                String AREA = area.getText().toString();
+
+                EditText carga = findViewById(R.id.editCARGA);
+                String CARGA = carga.getText().toString();
+
+                //GUARDAR OS DADOS inspetor, CLIENTE, TAG, DataInst e DataRev
+                finish();
 
 
             }

@@ -67,6 +67,7 @@ public class RelRevest1Activity extends AppCompatActivity {
         buttonFotos = findViewById(R.id.buttonFotos);
         imageviewFoto = findViewById(R.id.imageViewFoto);
 
+
         imageButtonCamera.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
