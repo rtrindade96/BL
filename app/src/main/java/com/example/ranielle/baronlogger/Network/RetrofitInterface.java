@@ -12,8 +12,6 @@ import rx.Observable;
 
     public interface RetrofitInterface {
 
-        @POST("users")
-        Observable<Response> register(@Body User user);
 
         @POST("authenticate")
         Observable<Response> login();
@@ -27,7 +25,5 @@ import rx.Observable;
         @POST("users/{email}/password")
         Observable<Response> resetPasswordInit(@Path("email") String email);
 
-        @POST("users/{email}/password")
-        Observable<Response> resetPasswordFinish(@Path("email") String email, @Body User user);
 
 }

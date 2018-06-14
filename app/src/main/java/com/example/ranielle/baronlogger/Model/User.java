@@ -5,8 +5,6 @@ public class User {
         private String name;
         private String email;
         private String password;
-        private String created_at;
-        private String newPassword;
         private String token;
 
         public void setName(String name) {
@@ -14,10 +12,12 @@ public class User {
         }
 
         public void setEmail(String email) {
+
             this.email = email;
         }
 
         public void setPassword(String password) {
+
             this.password = password;
         }
 
@@ -26,18 +26,15 @@ public class User {
         }
 
         public String getEmail() {
+
             return email;
         }
 
-        public String getCreated_at() {
-            return created_at;
+        public String getPassword() {
+            return password;
         }
-
-        public void setNewPassword(String newPassword) {
-            this.newPassword = newPassword;
-        }
-
         public void setToken(String token) {
+
             this.token = token;
         }
 }
