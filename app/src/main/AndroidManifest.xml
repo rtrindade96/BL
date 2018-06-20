@@ -13,7 +13,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logo_baron"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
@@ -28,15 +28,16 @@
         <activity
             android:name=".Activity.PrincipalActivity"
             android:label="@string/title_activity_principal"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".Activity.RelRevest1Activity"
-            android:label="RELATÓRIO DE REVESTIMENTO">
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            </intent-filter>/>
+        </activity>
+        <activity
+            android:name=".Activity.RelRevest1Activity"
+            android:label="RELATÓRIO DE REVESTIMENTO">
         </activity>
         <activity android:name=".Activity.RelRevest2Activity" />
         <activity
