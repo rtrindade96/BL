@@ -198,7 +198,7 @@
         />
 
     <EditText
-        android:id="@+id/editMODELO"
+        android:id="@+id/editAREA"
         android:layout_width="169dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"

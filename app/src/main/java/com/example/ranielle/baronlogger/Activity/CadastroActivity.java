@@ -37,7 +37,7 @@ public class CadastroActivity extends AppCompatActivity {
                 String FABRICANTE = dropdownFABRICANTE.getSelectedItem().toString();
                 String TIPO_EQUIP = dropdownTIPOEQ.getSelectedItem().toString();
 
-                EditText modelo = findViewById(R.id.editMODELO);
+                EditText modelo = findViewById(R.id.editAREA);
                 String MODELO = modelo.getText().toString();
 
                 EditText area = findViewById(R.id.editAREA);

@@ -157,12 +157,12 @@ public class RelRevest1Activity extends AppCompatActivity {
             }
         });
 
-        Button avancar = findViewById(R.id.bntAVANÇAR);
+        Button avancar = findViewById(R.id.btavancar);
         avancar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                EditText DATAINST = findViewById(R.id.editDATAINSTA);
+                EditText DATAINST = findViewById(R.id.editDATA);
                 String dtinst = DATAINST.getText().toString();
 
                 EditText HORIMETRO = findViewById(R.id.editHORIMETRO);

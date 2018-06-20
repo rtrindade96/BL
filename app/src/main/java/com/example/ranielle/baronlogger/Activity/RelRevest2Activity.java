@@ -15,7 +15,7 @@ public class RelRevest2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rel_revest2);
 
-        Button avancar = findViewById(R.id.bntAVANÇAR);
+        Button avancar = findViewById(R.id.btavancar2);
         avancar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

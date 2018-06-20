@@ -151,18 +151,17 @@
     android:layout_below="@+id/FUNCIONARIOS3"/>
 
 
-<Button
-    android:id="@+id/btconcluir"
-    android:layout_width="100dp"
-    android:layout_height="wrap_content"
-    android:layout_marginBottom="16dp"
-    android:background="@drawable/fundo_bot"
-    android:text="AVANÇAR"
-    android:layout_alignParentBottom="true"
-    android:layout_centerHorizontal="true"
-    android:textColor="#FFFFFF"
-    android:layout_marginTop="20dp"
-    />
+    <Button
+        android:id="@+id/btavancar2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/fundo_bot"
+        android:text="AVANÇAR"
+        android:textColor="#FFFFFF" />
 
 
 </RelativeLayout>

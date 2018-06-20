@@ -44,20 +44,20 @@ public class RelInsp1Activity extends AppCompatActivity {
                 EditText dataREV = findViewById(R.id.editDATAREV);
                 String dtREV = dataREV.getText().toString();
 
-                Bundle b = new Bundle();
+                /*Bundle b = new Bundle();
                 b.putString("CLIENTE", cliente);
                 b.putString("TAG", TAG);
                 b.putString("DataInst", dtISNT);
-                b.putString("DataRev", dtREV);
+                b.putString("DataRev", dtREV);*/
                 Intent intentVaipraSegPag = new Intent(RelInsp1Activity.this, RelInsp2Activity.class);
-                intentVaipraSegPag.putExtras(b);
+                //intentVaipraSegPag.putExtras(b);
                 startActivity(intentVaipraSegPag);
                 finish();
             }
         });
     }
-
-    /*@Override
+/*
+    @Override
     protected void onResume() {
         super.onResume();
         finish();
