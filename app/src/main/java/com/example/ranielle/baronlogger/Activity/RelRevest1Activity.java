@@ -11,6 +11,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.net.Uri;
@@ -155,6 +156,37 @@ public class RelRevest1Activity extends AppCompatActivity {
                 }
             }
         });
+
+        Button avancar = findViewById(R.id.bntAVANÇAR);
+        avancar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                EditText DATAINST = findViewById(R.id.editDATAINSTA);
+                String dtinst = DATAINST.getText().toString();
+
+                EditText HORIMETRO = findViewById(R.id.editHORIMETRO);
+                String horimetro = HORIMETRO.getText().toString();
+
+                EditText AREA = findViewById(R.id.editAREA);
+                String area = AREA.getText().toString();
+
+                Bundle b = new Bundle();
+                b.putString("DataInst", dtinst);
+                b.putString("Horimetro", horimetro);
+                b.putString("Area", area);
+                Intent intentVaipraSegPag = new Intent(RelRevest1Activity.this, RelRevest2Activity.class);
+                intentVaipraSegPag.putExtras(b);
+                startActivity(intentVaipraSegPag);
+
+                //GUARDAR OS DADOS inspetor, CLIENTE, TAG, DataInst e DataRev
+                finish();
+
+
+            }
+        });
+
+
 
     }
 
