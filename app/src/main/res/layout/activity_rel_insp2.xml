@@ -13,7 +13,7 @@ tools:context=".Activity.RelInsp2Activity">
     android:layout_marginLeft="28dp"
     android:layout_marginStart="28dp"
     android:layout_marginTop="7dp"
-    app:layout_constraintStart_toEndOf="@+id/bntFOTOREV"
+    app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toBottomOf="@+id/txtREVESTIMENTO"
     app:srcCompat="@android:color/white" />
 
@@ -24,7 +24,7 @@ tools:context=".Activity.RelInsp2Activity">
     android:layout_marginLeft="28dp"
     android:layout_marginStart="28dp"
     android:layout_marginTop="7dp"
-    app:layout_constraintStart_toEndOf="@+id/bntFOTOHORIM"
+    app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toBottomOf="@+id/txtHORIMETRO"
     app:srcCompat="@android:color/white" />
 
@@ -35,21 +35,20 @@ tools:context=".Activity.RelInsp2Activity">
     android:layout_marginLeft="28dp"
     android:layout_marginStart="28dp"
     android:layout_marginTop="7dp"
-    app:layout_constraintStart_toEndOf="@+id/bntFOTOTAG"
+    app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toBottomOf="@+id/txtTAG"
     app:srcCompat="@android:color/white" />
 
-<ImageButton
-    android:id="@+id/imgbtnREVEST"
-    android:layout_width="40dp"
-    android:layout_height="40dp"
-    android:layout_marginLeft="16dp"
-    android:layout_marginStart="16dp"
-    android:layout_marginTop="8dp"
-    android:background = "@drawable/round_button"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/txtREVESTIMENTO"
-    app:srcCompat="@drawable/ic_photo_camera_white_24dp" />
+    <ImageButton
+        android:id="@+id/imgbtnREVEST"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/round_button"
+        app:layout_constraintStart_toEndOf="@id/imgvREVEST"
+        app:layout_constraintTop_toBottomOf="@+id/txtREVESTIMENTO"
+        app:srcCompat="@drawable/ic_photo_camera_white_24dp" />
 
 <Button
     android:id="@+id/bntFOTOREV"
@@ -65,17 +64,16 @@ tools:context=".Activity.RelInsp2Activity">
     app:layout_constraintTop_toBottomOf="@+id/txtREVESTIMENTO"
     tools:drawableLeft="@drawable/ic_filter_none_white_24dp" />
 
-<ImageButton
-    android:id="@+id/imgbtnHORIMETRO"
-    android:layout_width="40dp"
-    android:layout_height="40dp"
-    android:layout_marginLeft="16dp"
-    android:layout_marginStart="16dp"
-    android:layout_marginTop="8dp"
-    android:background = "@drawable/round_button"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/txtHORIMETRO"
-    app:srcCompat="@drawable/ic_photo_camera_white_24dp" />
+    <ImageButton
+        android:id="@+id/imgbtnHORIMETRO"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/round_button"
+        app:layout_constraintStart_toEndOf="@id/imgvHORIMETRO"
+        app:layout_constraintTop_toBottomOf="@+id/txtHORIMETRO"
+        app:srcCompat="@drawable/ic_photo_camera_white_24dp" />
 
 <Button
     android:id="@+id/bntFOTOHORIM"
@@ -177,16 +175,15 @@ tools:context=".Activity.RelInsp2Activity">
     app:layout_constraintTop_toBottomOf="@+id/txtTAG"
     tools:drawableLeft="@drawable/ic_filter_none_white_24dp" />
 
-<ImageButton
-    android:id="@+id/imgbtnTAG"
-    android:layout_width="40dp"
-    android:layout_height="40dp"
-    android:layout_marginLeft="16dp"
-    android:layout_marginStart="16dp"
-    android:layout_marginTop="8dp"
-    android:background = "@drawable/round_button"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/txtTAG"
-    app:srcCompat="@drawable/ic_photo_camera_white_24dp" />
+    <ImageButton
+        android:id="@+id/imgbtnTAG"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/round_button"
+        app:layout_constraintStart_toEndOf="@id/imgvTAG"
+        app:layout_constraintTop_toBottomOf="@+id/txtTAG"
+        app:srcCompat="@drawable/ic_photo_camera_white_24dp" />
 
 </android.support.constraint.ConstraintLayout>

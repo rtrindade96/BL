@@ -75,7 +75,7 @@ tools:context=".Activity.CadastroActivity">
     app:layout_constraintTop_toBottomOf="@+id/spinnerTIPOEQ" />
 
 <EditText
-    android:id="@+id/editAREA"
+    android:id="@+id/editMODELO"
     android:layout_width="180dp"
     android:layout_height="wrap_content"
     android:layout_marginLeft="16dp"
@@ -95,7 +95,7 @@ tools:context=".Activity.CadastroActivity">
     android:text="ÁREA DE REVESTIMENTO(em m²):"
     android:textSize="12sp"
     app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/editAREA" />
+    app:layout_constraintTop_toBottomOf="@+id/editMODELO" />
 
 <EditText
     android:id="@+id/editAREA"
