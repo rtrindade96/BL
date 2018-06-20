@@ -75,7 +75,7 @@ tools:context=".Activity.CadastroActivity">
     app:layout_constraintTop_toBottomOf="@+id/spinnerTIPOEQ" />
 
 <EditText
-    android:id="@+id/editAREA"
+    android:id="@+id/editMODELO"
     android:layout_width="180dp"
     android:layout_height="wrap_content"
     android:layout_marginLeft="16dp"
@@ -95,18 +95,17 @@ tools:context=".Activity.CadastroActivity">
     android:text="ÁREA DE REVESTIMENTO(em m²):"
     android:textSize="12sp"
     app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/editAREA" />
+    app:layout_constraintTop_toBottomOf="@+id/editMODELO" />
 
-<EditText
-    android:id="@+id/editAREA"
-    android:layout_width="70dp"
-    android:layout_height="wrap_content"
-    android:layout_marginLeft="16dp"
-    android:layout_marginStart="16dp"
-    android:layout_marginTop="5dp"
-    android:background="@drawable/fundo_input_text"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/txtAREA" />
+    <EditText
+        android:id="@+id/editAREA"
+        android:layout_width="183dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/fundo_input_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAREA" />
 
 <TextView
     android:id="@+id/txtCARGA"
@@ -120,15 +119,14 @@ tools:context=".Activity.CadastroActivity">
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toBottomOf="@+id/editAREA" />
 
-<EditText
-    android:id="@+id/editCARGA"
-    android:layout_width="80dp"
-    android:layout_height="wrap_content"
-    android:layout_marginLeft="16dp"
-    android:layout_marginStart="16dp"
-    android:layout_marginTop="5dp"
-    android:background="@drawable/fundo_input_text"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/txtCARGA" />
+    <EditText
+        android:id="@+id/editCARGA"
+        android:layout_width="181dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/fundo_input_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCARGA" />
 
 </android.support.constraint.ConstraintLayout>

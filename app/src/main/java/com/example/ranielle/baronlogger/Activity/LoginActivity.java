@@ -5,7 +5,6 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -48,9 +47,9 @@ public class LoginActivity extends AppCompatActivity {
 
         campoEmail = findViewById(R.id.editEmail);
         campoSenha = findViewById(R.id.editSenha);
-        botaoEntrar = findViewById(R.id.buttonEntrar);
+        botaoEntrar = findViewById(R.id.botaoEntrar);
 
-        botaoEntrar.setOnClickListener(view -> login());
+        botaoEntrar.setOnClickListener(view -> btEntrarr());
 
 
     }
@@ -68,7 +67,6 @@ public class LoginActivity extends AppCompatActivity {
         String password = campoSenha.getText().toString();
 
         int err = 0;
-
         if (!validateEmail(email)) {
 
             err++;
@@ -80,7 +78,6 @@ public class LoginActivity extends AppCompatActivity {
             err++;
             campoSenha.setError("Password should not be empty !");
         }
-
     }
 
     private void setError(){
@@ -111,7 +108,7 @@ public class LoginActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-      private void handleError(Throwable error) {
+    private void handleError(Throwable error) {
 
         if (error instanceof HttpException) {
 
@@ -125,16 +122,18 @@ public class LoginActivity extends AppCompatActivity {
             } catch (IOException e) {
                 e.printStackTrace();
             }
+        }
     }
-}
 
     @Override
     public void onDestroy() {
         super.onDestroy();
         mSubscriptions.unsubscribe();
     }
-    public void btEntrarr(View view){
+    public void btEntrarr(){
+        String email = campoEmail.getText().toString();
         startActivity(new Intent(this, PrincipalActivity.class));
+
     }
 }
 
