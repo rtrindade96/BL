@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".Activity.RelInsp2Activity">
+
+<ImageView
+    android:id="@+id/imgvREVEST"
+    android:layout_width="80dp"
+    android:layout_height="43dp"
+    android:layout_marginLeft="28dp"
+    android:layout_marginStart="28dp"
+    android:layout_marginTop="7dp"
+    app:layout_constraintStart_toEndOf="@+id/bntFOTOREV"
+    app:layout_constraintTop_toBottomOf="@+id/txtREVESTIMENTO"
+    app:srcCompat="@android:color/white" />
+
+<ImageView
+    android:id="@+id/imgvHORIMETRO"
+    android:layout_width="80dp"
+    android:layout_height="43dp"
+    android:layout_marginLeft="28dp"
+    android:layout_marginStart="28dp"
+    android:layout_marginTop="7dp"
+    app:layout_constraintStart_toEndOf="@+id/bntFOTOHORIM"
+    app:layout_constraintTop_toBottomOf="@+id/txtHORIMETRO"
+    app:srcCompat="@android:color/white" />
+
+<ImageView
+    android:id="@+id/imgvTAG"
+    android:layout_width="80dp"
+    android:layout_height="43dp"
+    android:layout_marginLeft="28dp"
+    android:layout_marginStart="28dp"
+    android:layout_marginTop="7dp"
+    app:layout_constraintStart_toEndOf="@+id/bntFOTOTAG"
+    app:layout_constraintTop_toBottomOf="@+id/txtTAG"
+    app:srcCompat="@android:color/white" />
+
+<ImageButton
+    android:id="@+id/imgbtnREVEST"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="8dp"
+    android:background = "@drawable/round_button"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/txtREVESTIMENTO"
+    app:srcCompat="@drawable/ic_photo_camera_white_24dp" />
+
+<Button
+    android:id="@+id/bntFOTOREV"
+    android:layout_width="80dp"
+    android:layout_height="40dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="8dp"
+    android:background="@drawable/fundo_bot"
+    android:text="Fotos"
+    android:textColor="@android:color/white"
+    app:layout_constraintStart_toEndOf="@+id/imgbtnREVEST"
+    app:layout_constraintTop_toBottomOf="@+id/txtREVESTIMENTO"
+    tools:drawableLeft="@drawable/ic_filter_none_white_24dp" />
+
+<ImageButton
+    android:id="@+id/imgbtnHORIMETRO"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="8dp"
+    android:background = "@drawable/round_button"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/txtHORIMETRO"
+    app:srcCompat="@drawable/ic_photo_camera_white_24dp" />
+
+<Button
+    android:id="@+id/bntFOTOHORIM"
+    android:layout_width="80dp"
+    android:layout_height="40dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="8dp"
+    android:background="@drawable/fundo_bot"
+    android:text="Fotos"
+    android:textColor="@android:color/white"
+    app:layout_constraintStart_toEndOf="@+id/imgbtnHORIMETRO"
+    app:layout_constraintTop_toBottomOf="@+id/txtHORIMETRO"
+    tools:drawableLeft="@drawable/ic_filter_none_white_24dp" />
+
+<Spinner
+    android:id="@+id/spinnerINSPETOR"
+    android:layout_width="180dp"
+    android:layout_height="36dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="5dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/txtINSPETOR" />
+
+<TextView
+    android:id="@+id/txtINSPETOR"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="10dp"
+    android:text="INSPETOR BARON RESPONSÁVEL"
+    android:textSize="12sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<TextView
+    android:id="@+id/txtREVESTIMENTO"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="10dp"
+    android:text="FOTO DO REVESTIMENTO ANTES"
+    android:textSize="12sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/spinnerINSPETOR" />
+
+<TextView
+    android:id="@+id/txtHORIMETRO"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="10dp"
+    android:text="HORÍMETRO"
+    android:textSize="12sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/imgbtnREVEST" />
+
+<TextView
+    android:id="@+id/txtTAG"
+    android:layout_width="wrap_content"
+    android:layout_height="17dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="10dp"
+    android:text="TAG"
+    android:textSize="12sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/imgbtnHORIMETRO" />
+
+<Button
+    android:id="@+id/bntCONCLUIR"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:background="@drawable/fundo_bot"
+    android:elevation="6dp"
+    android:stateListAnimator="@null"
+    android:text="CONCLUIR"
+    android:textColor="@android:color/white"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent" />
+
+<Button
+    android:id="@+id/bntFOTOTAG"
+    android:layout_width="80dp"
+    android:layout_height="40dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="8dp"
+    android:background="@drawable/fundo_bot"
+    android:text="FOTOS"
+    android:textColor="@android:color/white"
+    app:layout_constraintStart_toEndOf="@+id/imgbtnTAG"
+    app:layout_constraintTop_toBottomOf="@+id/txtTAG"
+    tools:drawableLeft="@drawable/ic_filter_none_white_24dp" />
+
+<ImageButton
+    android:id="@+id/imgbtnTAG"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="8dp"
+    android:background = "@drawable/round_button"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/txtTAG"
+    app:srcCompat="@drawable/ic_photo_camera_white_24dp" />
+
+</android.support.constraint.ConstraintLayout>

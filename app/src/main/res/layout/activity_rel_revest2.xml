@@ -1,9 +1,168 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity.RelRevest2Activity">
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Activity.RelRevest2Activity"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
 
-</android.support.constraint.ConstraintLayout>
+
+
+
+
+
+<TextView
+    android:id="@+id/CLIENTE"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:text="CLIENTE:"
+    />
+
+<Spinner
+    android:id="@+id/spinnerCLIENTE"
+    android:layout_width="180dp"
+    android:layout_height="36dp"
+    android:layout_below="@+id/CLIENTE"/>
+
+
+
+<TextView
+    android:id="@+id/TEMPO"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_below="@+id/spinnerCLIENTE"
+    android:text="TEMPO DE SERVIÇO(EM HORAS):"
+    />
+
+<Spinner
+    android:id="@+id/spinnerTEMPO"
+    android:layout_width="180dp"
+    android:layout_height="36dp"
+    android:layout_below="@+id/TEMPO"/>
+
+
+<TextView
+    android:id="@+id/revestimentodepois"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_below="@+id/spinnerTEMPO"
+    android:text="FOTO DO REVESTIMENTO DEPOIS:" />
+
+
+
+<ImageView
+    android:id="@+id/input_revestimentodepois"
+    android:layout_width="210dp"
+    android:layout_height="50dp"
+    android:layout_below="@+id/revestimentodepois"
+    app:srcCompat="?android:attr/colorBackground" />
+
+
+
+<ImageButton
+    android:id="@+id/imageButtonCamera"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:layout_toRightOf="@id/input_revestimentodepois"
+    android:layout_below="@id/revestimentodepois"
+    android:background = "@drawable/round_button"
+    android:src="@drawable/ic_photo_camera_white_24dp"
+    android:textColor="#FFFFFF"/>
+
+<Button
+    android:id="@+id/btfotos"
+    android:layout_width="100dp"
+    android:layout_height="50dp"
+    android:layout_toRightOf="@id/imageButtonCamera"
+    android:layout_below="@id/revestimentodepois"
+    android:layout_marginBottom="16dp"
+    android:background="@drawable/fundo_bot"
+    android:text="FOTOS"
+    android:layout_marginLeft="10dp"
+    android:textColor="#FFFFFF"/>
+
+
+<TextView
+    android:id="@+id/SUPERVISOR"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_below="@+id/input_revestimentodepois"
+    android:text="SUPERVISOR BARON RESPONSÁVEL:"
+    />
+
+<Spinner
+    android:id="@+id/spinnerSUPERVISOR"
+    android:layout_width="180dp"
+    android:layout_height="36dp"
+    android:layout_below="@+id/SUPERVISOR"/>
+
+
+<TextView
+    android:id="@+id/FUNCIONARIOS1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_below="@+id/spinnerSUPERVISOR"
+    android:text="FUNCIONÁRIOS:"
+    />
+
+<Spinner
+    android:id="@+id/spinnerFUNCIONARIOS1"
+    android:layout_width="180dp"
+    android:layout_height="36dp"
+    android:layout_below="@+id/FUNCIONARIOS1"/>
+
+
+<TextView
+    android:id="@+id/FUNCIONARIOS2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_below="@+id/spinnerFUNCIONARIOS1"
+    android:text="FUNCIONÁRIOS:"
+    />
+
+<Spinner
+    android:id="@+id/spinnerFUNCIONARIOS2"
+    android:layout_width="180dp"
+    android:layout_height="36dp"
+    android:layout_below="@+id/FUNCIONARIOS2"/>
+
+
+
+<TextView
+    android:id="@+id/FUNCIONARIOS3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_below="@+id/spinnerFUNCIONARIOS2"
+    android:text="FUNCIONÁRIOS:" />
+
+<Spinner
+    android:id="@+id/spinnerFUNCIONARIOS3"
+    android:layout_width="180dp"
+    android:layout_height="36dp"
+    android:layout_below="@+id/FUNCIONARIOS3"/>
+
+
+<Button
+    android:id="@+id/btconcluir"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:background="@drawable/fundo_bot"
+    android:text="AVANÇAR"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:textColor="#FFFFFF"
+    android:layout_marginTop="20dp"
+    />
+
+
+</RelativeLayout>

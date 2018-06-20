@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:paddingLeft="16dp"
     android:paddingRight="16dp">
 
@@ -10,7 +11,7 @@
         android:id="@+id/revestimento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="5dp"
         android:text="FOTO DO REVESTIMENTO ANTES:" />
 
 
@@ -39,8 +40,10 @@
         android:id="@+id/buttonFotos"
         android:layout_width="100dp"
         android:layout_height="50dp"
-        android:layout_alignParentEnd="true"
-        android:layout_below="@+id/tag"
+        android:layout_below="@id/revestimento"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/imageButtonCamera"
         android:background="@drawable/fundo_bot"
         android:text="FOTOS"
         android:textColor="#FFFFFF" />
@@ -51,12 +54,12 @@
         android:layout_height="wrap_content"
         android:text="HORIMETRO:"
         android:layout_below="@+id/imageViewFoto"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="5dp"
         />
 
 
     <ImageView
-        android:id="@+id/imageViewHorimetro"
+        android:id="@+id/imageViewHomimetro"
         android:layout_width="210dp"
         android:layout_height="50dp"
         android:layout_alignStart="@+id/horimetro"
@@ -69,7 +72,7 @@
         android:id="@+id/imageButtonCamHorimetro"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_toRightOf="@id/imageViewHorimetro"
+        android:layout_toRightOf="@id/imageViewHomimetro"
         android:layout_below="@id/horimetro"
         android:background = "@drawable/round_button"
         android:src="@drawable/ic_photo_camera_white_24dp"
@@ -96,8 +99,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TAG:"
-        android:layout_below="@+id/imageViewHorimetro"
-        android:layout_marginTop="50dp"
+        android:layout_below="@+id/imageViewHomimetro"
+        android:layout_marginTop="5dp"
         />
 
     <ImageView
@@ -124,21 +127,89 @@
         android:id="@+id/buttonFotosTAG"
         android:layout_width="100dp"
         android:layout_height="50dp"
-        android:layout_alignParentEnd="true"
-        android:layout_below="@+id/revestimento"
+        android:layout_below="@id/tag"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/imageButtonCamTAG"
         android:background="@drawable/fundo_bot"
         android:text="FOTOS"
         android:textColor="#FFFFFF" />
 
 
 
+    <TextView
+        android:id="@+id/data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/imageviewTAG"
+        android:text="DATA DA INSTALAÇÃO:"/>
 
 
+    <EditText
+        android:id="@+id/editDATA"
+        android:layout_width="169dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/data"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        tools:background="@drawable/fundo_input_text" />
+
+    <ImageButton
+        android:id="@+id/imgDATA"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/fundo_input_text"
+        android:elevation="6dp"
+        android:layout_below="@id/data"
+        android:layout_marginLeft="168dp"
+        android:stateListAnimator="@null"
+        app:layout_constraintStart_toEndOf="@+id/editDATAINSTA"
+        app:layout_constraintTop_toBottomOf="@+id/txtHORIMETRO"
+        app:srcCompat="@drawable/ic_event_grey_24dp" />
+
+
+    <TextView
+        android:id="@+id/txtHORIMETRO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editDATA"
+        android:text="HORÍMETRO:"
+        android:layout_marginTop="5dp"
+        />
+
+    <EditText
+        android:id="@+id/editHORIMETRO"
+        android:layout_width="169dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/txtHORIMETRO"
+        android:background="@drawable/fundo_input_text"/>
+
+
+    <TextView
+        android:id="@+id/arearevest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editHORIMETRO"
+        android:text="ÁREA DE REVESTIMENTO:"
+        android:layout_marginTop="5dp"
+        />
+
+    <EditText
+        android:id="@+id/editMODELO"
+        android:layout_width="169dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/arearevest"
+        android:background="@drawable/fundo_input_text" />
 
 
     <Button
         android:id="@+id/btavancar"
         android:layout_width="100dp"
+        android:layout_marginLeft="270dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:background="@drawable/fundo_bot"

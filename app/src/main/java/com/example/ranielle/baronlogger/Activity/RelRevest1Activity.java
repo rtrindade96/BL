@@ -3,7 +3,6 @@ package com.example.ranielle.baronlogger.Activity;
 
 
 import android.Manifest;
-import android.content.ContentResolver;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
@@ -13,33 +12,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.support.v4.app.Fragment;
 import android.widget.ImageView;
-import android.Manifest;
-import android.content.DialogInterface;
-import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.graphics.Bitmap;
 import android.net.Uri;
-import android.provider.MediaStore;
-import android.support.annotation.NonNull;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
-import android.util.Log;
-import android.view.View;
-import android.widget.EditText;
-import android.widget.ImageButton;
-import android.widget.ImageView;
-import android.widget.Toast;
 
 import com.example.ranielle.baronlogger.Helper.Permissao;
 import com.example.ranielle.baronlogger.R;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import java.io.InputStream;
 
 @SuppressWarnings("unused")
 public class RelRevest1Activity extends AppCompatActivity {
@@ -87,6 +67,7 @@ public class RelRevest1Activity extends AppCompatActivity {
         buttonFotos = findViewById(R.id.buttonFotos);
         imageviewFoto = findViewById(R.id.imageViewFoto);
 
+
         imageButtonCamera.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -117,7 +98,7 @@ public class RelRevest1Activity extends AppCompatActivity {
 //fotos horimetro
         imageButtonCamHorimetro = findViewById(R.id.imageButtonCamHorimetro);
         buttonFotosHorimetro = findViewById(R.id.buttonFotosHorimetro);
-        imageviewHorimetro = findViewById(R.id.imageViewHorimetro);
+        imageviewHorimetro = findViewById(R.id.imageViewHomimetro);
 
         imageButtonCamHorimetro.setOnClickListener(new View.OnClickListener() {
             @Override

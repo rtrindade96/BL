@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".Activity.CadastroActivity">
+
+<TextView
+    android:id="@+id/txtFABRICANTE"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="10dp"
+    android:text="FABRICANTE:"
+    android:textSize="12sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<Button
+    android:id="@+id/bntCONCLUIR"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:background="@drawable/fundo_bot"
+    android:text="CONCLUIR"
+    android:textColor="#FFFFFF"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent" />
+
+<Spinner
+    android:id="@+id/spinnerFABRICANTE"
+    android:layout_width="180dp"
+    android:layout_height="36dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="5dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/txtFABRICANTE" />
+
+<TextView
+    android:id="@+id/txtTIPOEQ"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="10dp"
+    android:text="TIPO DE EQUIPAMENTE:"
+    android:textSize="12sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/spinnerFABRICANTE" />
+
+<Spinner
+    android:id="@+id/spinnerTIPOEQ"
+    android:layout_width="180dp"
+    android:layout_height="36dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="5dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/txtTIPOEQ" />
+
+<TextView
+    android:id="@+id/txtMODELO"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="10dp"
+    android:text="MODELO:"
+    android:textSize="12sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/spinnerTIPOEQ" />
+
+<EditText
+    android:id="@+id/editMODELO"
+    android:layout_width="180dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/fundo_input_text"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/txtMODELO" />
+
+<TextView
+    android:id="@+id/txtAREA"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="10dp"
+    android:text="ÁREA DE REVESTIMENTO(em m²):"
+    android:textSize="12sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/editMODELO" />
+
+<EditText
+    android:id="@+id/editAREA"
+    android:layout_width="70dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/fundo_input_text"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/txtAREA" />
+
+<TextView
+    android:id="@+id/txtCARGA"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="10dp"
+    android:text="CARGA(Toneladas):"
+    android:textSize="12sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/editAREA" />
+
+<EditText
+    android:id="@+id/editCARGA"
+    android:layout_width="80dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/fundo_input_text"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/txtCARGA" />
+
+</android.support.constraint.ConstraintLayout>
