@@ -84,7 +84,8 @@ public class PrincipalActivity extends AppCompatActivity
             startActivity(intent);
 
         } else if (id == R.id.btlogout) {
-
+            Intent intent = new Intent(this,  LoginActivity.class);
+            startActivity(intent);
         } else if (id == R.id.btrelinsprevestimento) {
             Intent intent = new Intent(this,  RelInsp1Activity.class);
             startActivity(intent);
