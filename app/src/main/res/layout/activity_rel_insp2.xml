@@ -50,19 +50,17 @@ tools:context=".Activity.RelInsp2Activity">
         app:layout_constraintTop_toBottomOf="@+id/txtREVESTIMENTO"
         app:srcCompat="@drawable/ic_photo_camera_white_24dp" />
 
-<Button
-    android:id="@+id/bntFOTOREV"
-    android:layout_width="80dp"
-    android:layout_height="40dp"
-    android:layout_marginLeft="10dp"
-    android:layout_marginStart="10dp"
-    android:layout_marginTop="8dp"
-    android:background="@drawable/fundo_bot"
-    android:text="Fotos"
-    android:textColor="@android:color/white"
-    app:layout_constraintStart_toEndOf="@+id/imgbtnREVEST"
-    app:layout_constraintTop_toBottomOf="@+id/txtREVESTIMENTO"
-    tools:drawableLeft="@drawable/ic_filter_none_white_24dp" />
+    <Button
+        android:id="@+id/bntFOTOREV"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/fundo_bot"
+        android:text="Fotos"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toEndOf="@+id/imgbtnREVEST"
+        app:layout_constraintTop_toBottomOf="@+id/txtREVESTIMENTO" />
 
     <ImageButton
         android:id="@+id/imgbtnHORIMETRO"
@@ -75,19 +73,17 @@ tools:context=".Activity.RelInsp2Activity">
         app:layout_constraintTop_toBottomOf="@+id/txtHORIMETRO"
         app:srcCompat="@drawable/ic_photo_camera_white_24dp" />
 
-<Button
-    android:id="@+id/bntFOTOHORIM"
-    android:layout_width="80dp"
-    android:layout_height="40dp"
-    android:layout_marginLeft="10dp"
-    android:layout_marginStart="10dp"
-    android:layout_marginTop="8dp"
-    android:background="@drawable/fundo_bot"
-    android:text="Fotos"
-    android:textColor="@android:color/white"
-    app:layout_constraintStart_toEndOf="@+id/imgbtnHORIMETRO"
-    app:layout_constraintTop_toBottomOf="@+id/txtHORIMETRO"
-    tools:drawableLeft="@drawable/ic_filter_none_white_24dp" />
+    <Button
+        android:id="@+id/bntFOTOHORIM"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/fundo_bot"
+        android:text="Fotos"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toEndOf="@+id/imgbtnHORIMETRO"
+        app:layout_constraintTop_toBottomOf="@+id/txtHORIMETRO" />
 
 <Spinner
     android:id="@+id/spinnerCLIENTE"
@@ -161,19 +157,17 @@ tools:context=".Activity.RelInsp2Activity">
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent" />
 
-<Button
-    android:id="@+id/bntFOTOTAG"
-    android:layout_width="80dp"
-    android:layout_height="40dp"
-    android:layout_marginLeft="10dp"
-    android:layout_marginStart="10dp"
-    android:layout_marginTop="8dp"
-    android:background="@drawable/fundo_bot"
-    android:text="FOTOS"
-    android:textColor="@android:color/white"
-    app:layout_constraintStart_toEndOf="@+id/imgbtnTAG"
-    app:layout_constraintTop_toBottomOf="@+id/txtTAG"
-    tools:drawableLeft="@drawable/ic_filter_none_white_24dp" />
+    <Button
+        android:id="@+id/bntFOTOTAG"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/fundo_bot"
+        android:text="FOTOS"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toEndOf="@+id/imgbtnTAG"
+        app:layout_constraintTop_toBottomOf="@+id/txtTAG" />
 
     <ImageButton
         android:id="@+id/imgbtnTAG"

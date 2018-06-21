@@ -8,6 +8,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import com.example.ranielle.baronlogger.R;
 
@@ -43,16 +44,19 @@ public class RelInsp1Activity extends AppCompatActivity {
 
                 EditText dataREV = findViewById(R.id.editDATAREV);
                 String dtREV = dataREV.getText().toString();
-
-                /*Bundle b = new Bundle();
-                b.putString("CLIENTE", cliente);
-                b.putString("TAG", TAG);
-                b.putString("DataInst", dtISNT);
-                b.putString("DataRev", dtREV);*/
-                Intent intentVaipraSegPag = new Intent(RelInsp1Activity.this, RelInsp2Activity.class);
-                //intentVaipraSegPag.putExtras(b);
-                startActivity(intentVaipraSegPag);
-                finish();
+                if (!(dtREV.matches("")||dtISNT.matches(""))) {
+                    //GUARDAR OS DADOS inspetor, CLIENTE, TAG, DataInst e DataRev
+                    Bundle b = new Bundle();
+                    b.putString("CLIENTE", cliente);
+                    b.putString("TAG", TAG);
+                    b.putString("DataInst", dtISNT);
+                    b.putString("DataRev", dtREV);
+                    Intent intentVaipraSegPag = new Intent(RelInsp1Activity.this, RelInsp2Activity.class);
+                    intentVaipraSegPag.putExtras(b);
+                    startActivity(intentVaipraSegPag);
+                    finish();
+                }
+                Toast.makeText(RelInsp1Activity.this,"Todos os campos devem ser preenchidos", Toast.LENGTH_SHORT).show();
             }
         });
     }
