@@ -121,7 +121,7 @@ tools:context=".Activity.CadastroActivity">
 
     <EditText
         android:id="@+id/editCARGA"
-        android:layout_width="181dp"
+        android:layout_width="107dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="5dp"
